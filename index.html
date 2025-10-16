@@ -1,58 +1,54 @@
 <!DOCTYPE html>
-<html lang="es"> 
+<html lang="es">
 <head>
-    <meta charset="UTF-8"> 
-    <title>Mi primera página</title> 
-    <style>
+    <meta charset="UTF-8">
+    <title>Mi primera página</title>
+    <style>
         body {
-   
-            word-spacing: -1px; 
-  
-            letter-spacing: -0.1px; 
+            word-spacing: -1px;
+            letter-spacing: -0.1px;
+            margin: 0;
+            padding: 20px;
         }
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #333;
-            color: white;
-            padding: 8px;
-            z-index: 100;
-        }
-        .skip-link:focus {
-            top: 0;
-        }
-    </style>
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #333;
+            color: white;
+            padding: 8px;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+        p, ul, img, a {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <a href="#contenido" class="skip-link">Saltar al contenido</a>
-
-    <header>
-        <h1>¡Holaaaaaaaa!</h1> 
-    </header>
-
-    <main id="contenido">
-        <p>Esta es mi primera página web con HTML.</p> 
-        <p>Soy Javier Saavedra</p>
-
-        <p>Aquí una lista de los mejores juegos del mundo:</p> 
-        <ul>
-            <li>1. Fortnite</li>
-            <li>Gracias por ver !!!</li>
-        </ul> 
-
-        <img src="foto.jpeg" 
-             alt="Foto del dr. House" 
-             width="300" height="300">
-        
+    <a href="#contenido" class="skip-link">Saltar al contenido</a>
+    <header>
+        <h1>¡Holaaaaaaaa!</h1>
+    </header>
+    <main id="contenido">
+        <p>Soy Javier Saavedra</p>
+        <p>Aquí una lista de los mejores juegos del mundo:</p>
+        <ul>
+            <li>1. Fortnite</li>
+            <li>Gracias por ver !!!</li>
+        </ul>
+        <img src="foto.jpeg" alt="Foto del dr. House" width="300" height="300">
         <br>
-        
-        <a href="https://www.youtube.com/watch?v=s5K2gkq98Mw&list=RDs5K2gkq98Mw&start_radio=1/" target="_blank" rel="noopener noreferrer">Video epico</a>
-
-    </main>
-
-    <footer>
-        <p>© 2025 Javier Saavedra</p>
-    </footer>
+        <a href="https://www.youtube.com/watch?v=s5K2gkq98Mw&list=RDs5K2gkq98Mw&start_radio=1/" target="_blank" rel="noopener noreferrer">Video epico</a>
+    </main>
+    <footer>
+        <p>© 2025 Javier Saavedra</p>
+    </footer>
 </body>
 </html>
