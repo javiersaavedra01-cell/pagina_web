@@ -5,10 +5,11 @@
     <title>Mi primera página</title>
     <style>
         body {
-            word-spacing: -1px;
-            letter-spacing: -0.1px;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 20px;
+            background-color: #f5f5f5;
         }
         .skip-link {
             position: absolute;
@@ -18,35 +19,83 @@
             color: white;
             padding: 8px;
             z-index: 100;
+            text-decoration: none;
         }
         .skip-link:focus {
             top: 0;
         }
-        p, ul, img, a {
-            margin: 0;
-            padding: 0;
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-bottom: 20px;
         }
         li {
-            margin: 0;
+            margin-bottom: 8px;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-description {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+        }
+        a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
     <a href="#contenido" class="skip-link">Saltar al contenido</a>
+
     <header>
         <h1>¡Holaaaaaaaa!</h1>
     </header>
+
     <main id="contenido">
+        <p>Esta es mi primera página web con HTML.</p>
         <p>Soy Javier Saavedra</p>
+
         <p>Aquí una lista de los mejores juegos del mundo:</p>
         <ul>
             <li>1. Fortnite</li>
             <li>Gracias por ver !!!</li>
         </ul>
-        <img src="foto.jpeg" alt="Foto del dr. House" width="300" height="300">
-        <br>
+
+        <div class="image-container">
+            <img src="foto.jpeg" alt="Foto del dr. House" width="300" height="300">
+            <p class="image-description">Foto de dr. House</p>
+        </div>
+        
         <a href="https://www.youtube.com/watch?v=s5K2gkq98Mw&list=RDs5K2gkq98Mw&start_radio=1/" target="_blank" rel="noopener noreferrer">Video epico</a>
     </main>
+
     <footer>
         <p>© 2025 Javier Saavedra</p>
     </footer>
